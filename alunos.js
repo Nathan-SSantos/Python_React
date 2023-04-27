@@ -79,3 +79,7 @@ function Alunos() {
       </tbody>
     </table>
   </div>
+  ); 
+ }; 
+  
+ export default alunos;
