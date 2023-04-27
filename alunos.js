@@ -59,7 +59,7 @@ function Alunos() {
       <table>
         <thead>
           <tr>
-            <th>CPF
+            <th>CPF</th>
         </tr>
         <tr>
           <th>Nome</th>
@@ -69,8 +69,9 @@ function Alunos() {
       </thead>
       <tbody>
         {alunos.map(aluno => (
-          <tr key={aluno.cpf}>
+          <tr key={aluno.id}>
             <td>{aluno.nome}</td>
+            <td>{aluno.cpf}</td>
             <td>{aluno.curso}</td>
             <td>{aluno.periodo}</td>
           </tr>
