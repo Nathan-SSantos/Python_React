@@ -41,20 +41,16 @@ import api from '../api';
        <h1>Adicionar Aluno</h1> 
        <form onSubmit={adicionarAluno}> 
          <label> 
-           CPF: 
-           <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} /> 
+           Numero_Matrícula: <input type="text" value={cpf} /> 
          </label> 
          <label> 
-           Nome: 
-           <input type="text" value={nome} onChange={(e) => setNome(e.target.value)} /> 
+           Nome: <input type="text" value={nome} /> 
          </label> 
          <label> 
-           Curso: 
-           <input type="text" value={curso} onChange={(e) => setCurso(e.target.value)} /> 
+           Curso: <input type="text" value={curso} /> 
          </label> 
          <label> 
-           Período: 
-           <input type="text" value={periodo} onChange={(e) => setPeriodo(e.target.value)} /> 
+           Período: <input type="text" value={periodo} /> 
          </label> 
          <button type="submit">Adicionar</button> 
        </form> 
@@ -62,7 +58,7 @@ import api from '../api';
        <table> 
          <thead> 
          <tr>
-         <th>CPF</th>  
+         <th>Numero_Matrícula</th>  
            <th>Nome</th> 
            <th>Curso</th> 
            <th>Período</th> 
@@ -71,8 +67,8 @@ import api from '../api';
        <tbody> 
          {alunos.map(aluno => ( 
            <tr key={aluno.id}> 
+             <td>{aluno.cpf}</td>
              <td>{aluno.nome}</td> 
-             <td>{aluno.cpf}</td> 
              <td>{aluno.curso}</td> 
              <td>{aluno.periodo}</td> 
            </tr> 
