@@ -41,16 +41,16 @@ import api from '../api';
        <h1>Adicionar Aluno</h1> 
        <form onSubmit={adicionarAluno}> 
          <label> 
-           Numero_Matrícula: <input type="text" value={cpf} /> 
+           Numero_Matrícula: <input type="text" value={cpf} onChange = {(e) => setCpf(e.target.value)} /> 
          </label> 
          <label> 
-           Nome: <input type="text" value={nome} /> 
+           Nome: <input type="text" value={nome} onChange = {(e) => setNome(e.target.value)} /> 
          </label> 
          <label> 
-           Curso: <input type="text" value={curso} /> 
+           Curso: <input type="text" value={curso} onChange = {(e) => setNome(e.target.value)} /> 
          </label> 
          <label> 
-           Período: <input type="text" value={periodo} /> 
+           Período: <input type="text" value={periodo} onChange = {(e) => setPeriodo(e.target.value)} /> 
          </label> 
          <button type="submit">Adicionar</button> 
        </form> 
